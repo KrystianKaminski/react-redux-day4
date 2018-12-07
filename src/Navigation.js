@@ -63,6 +63,19 @@ class Navigation extends React.Component {
                                 Counter with start value
                         </ListItem>
                         </Link>
+                        <Link to="/fetch-users"
+                            style={style.links}>
+                            <ListItem>
+                                Fetch users
+                            </ListItem>
+                        </Link>
+                        <Link to="/fetch-users-fb"
+                            style={style.links}>
+                            <ListItem>
+                                Fetch users from firebase
+                            </ListItem>
+                        </Link>
+                        
                     </List>
                 </Drawer>
             </div>

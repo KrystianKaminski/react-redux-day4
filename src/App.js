@@ -5,6 +5,7 @@ import Counter from './Counter'
 import PassingProps from './PassingProps'
 import Navigation from './Navigation'
 import FetchUsers from './FetchUsers';
+import SyncUsers from './SyncUsers';
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
       <Route exact path="/counter-with-start-value"
         component={() => <Counter value={15} />} />
       <Route exact path="/fetch-users" component={FetchUsers} />
+      <Route exact path="/fetch-users-fb" component={SyncUsers} />
     </div>
   </Router >
 )
