@@ -21,7 +21,7 @@ class Navigation extends React.Component {
         open: false
     }
 
-    handleToggle = () => this.setState({open: !this.state.open})
+    handleToggle = () => this.setState({ open: !this.state.open })
 
     render() {
         return (
@@ -30,32 +30,39 @@ class Navigation extends React.Component {
                     label="Toggle drawer"
                     onClick={this.handleToggle}
                     style={style.button}
+                    primary={true}
                 />
                 <Drawer
+                    docked={false}
                     open={this.state.open}
+                    onRequestChange={this.handleToggle}
                 >
                     <List>
-                        <ListItem>
-                            <Link to="/"
-                                style={style.links}>Main
-                         </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link
-                                to="/counter"
-                                style={style.links}>Counter
+                        <Link to="/"
+                            style={style.links}>
+                            <ListItem>
+                                Main
+                            </ListItem>
                         </Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link to="/passing-props"
-                                style={style.links}>Passing-Props
+                        <Link
+                            to="/counter"
+                            style={style.links}>
+                            <ListItem>
+                                Counter
+                            </ListItem>
                         </Link>
+                        <Link to="/passing-props"
+                            style={style.links}>
+                            <ListItem>
+                                Passing-Props
                         </ListItem>
-                        <ListItem>
-                            <Link to="/counter-with-start-value"
-                                style={style.links}>Counter with start value
                         </Link>
+                        <Link to="/counter-with-start-value"
+                            style={style.links}>
+                            <ListItem>
+                                Counter with start value
                         </ListItem>
+                        </Link>
                     </List>
                 </Drawer>
             </div>
