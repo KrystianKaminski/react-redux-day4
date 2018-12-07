@@ -6,6 +6,7 @@ import PassingProps from './PassingProps'
 import Navigation from './Navigation'
 import FetchUsers from './FetchUsers';
 import SyncUsers from './SyncUsers';
+import Add from './Add'
 
 import routes from './routes'
 
@@ -21,6 +22,7 @@ const App = () => (
         component={() => <Counter value={15} />} />
       <Route exact path="/fetch-users" component={FetchUsers} />
       <Route exact path="/fetch-users-fb" component={SyncUsers} />
+      <Route exact path="/add" component={Add} />
     </div>
   </Router >
 )
