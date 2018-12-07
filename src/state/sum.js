@@ -12,8 +12,8 @@ export const checkFirstInputValue = value => ({
 })
 
 export const checkSecondInputValue = value => ({
-    type: SECOND_INPUT,
-    value: parseInt(value)
+    type: SECOND_INPUT || 0,
+    value: parseInt(value) || 0
 })
 
 export default (state = INITIAL_STATE, action) => {
