@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import PassingPropsPrim from './PassingPropsPrim'
 class PassingProps extends React.Component {

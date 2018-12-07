@@ -39,38 +39,51 @@ class Navigation extends React.Component {
                 >
                     <List>
                         <Link to="/"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
                             <ListItem>
                                 Main
                             </ListItem>
                         </Link>
                         <Link
                             to="/counter"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
+                            
                             <ListItem>
                                 Counter
                             </ListItem>
                         </Link>
                         <Link to="/passing-props"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
                             <ListItem>
                                 Passing-Props
                         </ListItem>
                         </Link>
                         <Link to="/counter-with-start-value"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
                             <ListItem>
                                 Counter with start value
                         </ListItem>
                         </Link>
                         <Link to="/fetch-users"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
                             <ListItem>
                                 Fetch users
                             </ListItem>
                         </Link>
                         <Link to="/fetch-users-fb"
-                            style={style.links}>
+                            style={style.links}
+                            onClick={this.handleToggle}
+                            >
                             <ListItem>
                                 Fetch users from firebase
                             </ListItem>

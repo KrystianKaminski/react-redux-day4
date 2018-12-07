@@ -24,7 +24,9 @@ class SyncUsers extends React.Component {
                 {this.state.users &&
                     this.state.users.map ?
                     this.state.users.map(user => (
-                        <div>Email: {user.email}</div>
+                        <div
+                            key={user.login.uuid}
+                        >Email: {user.email}</div>
                     ))
                     :
                     'Error!'

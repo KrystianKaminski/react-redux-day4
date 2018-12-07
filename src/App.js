@@ -7,6 +7,8 @@ import Navigation from './Navigation'
 import FetchUsers from './FetchUsers';
 import SyncUsers from './SyncUsers';
 
+import routes from './routes'
+
 
 const App = () => (
   <Router>
